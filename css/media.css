@@ -11,6 +11,10 @@
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+	.services__list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media (max-width: 650px) {
@@ -23,8 +27,13 @@
 	.site-header__hero-desc {
 		font-size: 16px;
 	}
-	.features__info-title {
+	.features__info-title,
+	.services__info-title {
 		font-size: 35px;
+	}
+	.services__list {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
 
@@ -58,7 +67,14 @@
 	.site-header__hero-btns {
 		flex-direction: column;
 	}
+	.features__info-title,
+	.services__info-title {
+		font-size: 25px;
+	}
+	.features-item {
+		gap: 5px;
+	}
 	.features-item-title {
-		font-size: 30px;
+		font-size: 22px;
 	}
 }
