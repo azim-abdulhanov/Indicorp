@@ -1,0 +1,31 @@
+@media (max-width: 1020px) {
+	.site-header__cards {
+		display: flex;
+		flex-direction: column;
+	}
+	.site-header__card {
+		display: flex;
+		width: 100%;
+	}
+}
+
+@media (max-width: 650px) {
+	.site-header__hero {
+		max-width: 400px;
+	}
+	.site-header__hero-title {
+		font-size: 45px;
+	}
+	.site-header__hero-desc {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 480px) {
+	.site-header__nav-list {
+		display: none;
+	}
+	.site-header__nav-menu {
+		display: block;
+	}
+}
