@@ -7,6 +7,10 @@
 		display: flex;
 		width: 100%;
 	}
+	.features__list {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
 
 @media (max-width: 650px) {
@@ -19,6 +23,9 @@
 	.site-header__hero-desc {
 		font-size: 16px;
 	}
+	.features__info-title {
+		font-size: 35px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -27,5 +34,31 @@
 	}
 	.site-header__nav-menu {
 		display: block;
+	}
+	.features__info-title {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 350px) {
+	.site-header__hero-title {
+		font-size: 35px;
+		text-align: center;
+		line-height: 45px;
+	}
+	.site-header__hero-desc {
+		text-align: center;
+	}
+	.site-header__card {
+		gap: 5px;
+	}
+	.site-header__card-title {
+		font-size: 20px;
+	}
+	.site-header__hero-btns {
+		flex-direction: column;
+	}
+	.features-item-title {
+		font-size: 30px;
 	}
 }
