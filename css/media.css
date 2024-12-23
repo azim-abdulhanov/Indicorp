@@ -15,6 +15,19 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 	}
+	.about__video-wrapper {
+		flex-direction: column;
+		gap: 80px;
+	}
+	.about__video {
+		width: 850px;
+	}
+}
+
+@media (max-width: 950px) {
+	.about__video {
+		width: 100%;
+	}
 }
 
 @media (max-width: 650px) {
@@ -28,12 +41,16 @@
 		font-size: 16px;
 	}
 	.features__info-title,
-	.services__info-title {
+	.services__info-title,
+	.about__info-title {
 		font-size: 35px;
 	}
 	.services__list {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
+	}
+	.about__video-info-title {
+		font-size: 30px;
 	}
 }
 
@@ -46,6 +63,16 @@
 	}
 	.features__info-title {
 		font-size: 30px;
+	}
+	.about__info-title {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.about__video-info-title {
+		font-size: 25px;
+	}
+	.about__item {
+		gap: 10px;
 	}
 }
 
