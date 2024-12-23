@@ -12,40 +12,61 @@
 		<header class="site-header">
 			<div class="container">
 				<nav class="site-header__nav">
-					<a class="site-header__nav-logo" href="index.html">
-						<img
-							class="site-header__nav-logo-img"
-							src="./images/logo.svg"
-							alt="Header logo"
-							width="102"
-							height="32"
-						/>
-					</a>
+					<div class="site-header__nav-item">
+						<a class="site-header__nav-logo" href="index.html">
+							<img
+								class="site-header__nav-logo-img"
+								src="./images/logo.svg"
+								alt="Header logo"
+								width="102"
+								height="32"
+							/>
+						</a>
+						<ul class="site-header__nav-list">
+							<li class="site-header__nav-item">
+								<a class="site-header__nav-link" href="#">Home</a>
+							</li>
+							<li class="site-header__nav-item">
+								<a class="site-header__nav-link" href="#">Product</a>
+							</li>
+							<li class="site-header__nav-item">
+								<a class="site-header__nav-link" href="#">Pricing</a>
+							</li>
+							<li class="site-header__nav-item">
+								<a class="site-header__nav-link" href="#">Contact</a>
+							</li>
+						</ul>
+					</div>
 
-					<ul class="site-header__nav-list">
-						<li class="site-header__nav-item">
-							<a class="site-header__nav-link" href="#">Home</a>
-						</li>
-						<li class="site-header__nav-item">
-							<a class="site-header__nav-link" href="#">Product</a>
-						</li>
-						<li class="site-header__nav-item">
-							<a class="site-header__nav-link" href="#">Pricing</a>
-						</li>
-						<li class="site-header__nav-item">
-							<a class="site-header__nav-link" href="#">Contact</a>
-						</li>
-					</ul>
-
-					<button class="site-header__nav-menu">
-						<img
-							class="site-header__nav-menu-open"
-							src="./images/menu.svg"
-							alt=""
-							width="24"
-							height="14"
-						/>
-					</button>
+					<div class="site-header__menu">
+						<a class="site-header__menu-search" href="#">
+							<img
+								class="site-header__menu-search-img"
+								src="./images/search.svg"
+								alt="Search icon"
+								width="24"
+								height="24"
+							/>
+						</a>
+						<a class="site-header__menu-cart" href="#">
+							<img
+								class="site-header__menu-cart-img"
+								src="./images/cart.svg"
+								alt="Cart icon"
+								width="24"
+								height="24"
+							/>
+						</a>
+						<button class="site-header__menu-btn">
+							<img
+								class="site-header__nav-menu-open"
+								src="./images/menu.svg"
+								alt="Menu icon"
+								width="24"
+								height="14"
+							/>
+						</button>
+					</div>
 				</nav>
 
 				<div class="site-header__hero">
@@ -308,6 +329,53 @@
 				</div>
 			</section>
 			<!-- ABOUT END -->
+
+			<!-- CLIENTS START -->
+			<section class="clients">
+				<div class="container">
+					<ul class="clients__list">
+						<li class="clients__item">
+							<a class="clients__item-link" href="#">
+								<img class="clients__item-img" src="./images/brands/brand-logo1.png" alt="Pied logo">
+							</a>
+						</li>
+						<li class="clients__item">
+							<a class="clients__item-link" href="#">
+								<img class="clients__item-img" src="./images/brands/brand-logo2.png" alt="Pied logo">
+							</a>
+						</li>
+						<li class="clients__item">
+							<a class="clients__item-link" href="#">
+								<img class="clients__item-img" src="./images/brands/brand-logo3.png" alt="Pied logo">
+							</a>
+						</li>
+						<li class="clients__item">
+							<a class="clients__item-link" href="#">
+								<img class="clients__item-img" src="./images/brands/brand-logo4.png" alt="Pied logo">
+							</a>
+						</li>
+						<li class="clients__item">
+							<a class="clients__item-link" href="#">
+								<img class="clients__item-img" src="./images/brands/brand-logo5.png" alt="Pied logo">
+							</a>
+						</li>
+						<li class="clients__item">
+							<a class="clients__item-link" href="#">
+								<img class="clients__item-img" src="./images/brands/brand-logo6.png" alt="Pied logo">
+							</a>
+						</li>
+					</ul>
+
+					<form class="clients__form">
+						<h3 class="clients__form-title">Subscribe For Latest Newsletter</h3>
+						<div class="clients__form-input">
+							<input class="clients__form-input-email" type="email" placeholder="Your Email">
+							<button class="clients__form-input-btn" type="submit">Subscribe</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<!-- CLIENTS END -->
 		</main>
 		<!-- MAIN END -->
 

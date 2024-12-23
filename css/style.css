@@ -54,6 +54,12 @@ input {
 	align-items: center;
 }
 
+.site-header__nav-item {
+	display: flex;
+	align-items: center;
+	gap: 121px;
+}
+
 .site-header__nav-list {
 	display: flex;
 	gap: 21px;
@@ -74,29 +80,43 @@ input {
 	color: #00a0c1;
 }
 
-.site-header__nav-menu {
+.site-header__menu {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.site-header__nav-logo {
+	z-index: 2;
+}
+
+.site-header__menu-search,
+.site-header__menu-cart {
 	display: none;
-	margin-left: auto;
+	z-index: 2;
+}
+
+.site-header__menu-btn {
 	background-color: transparent;
 	cursor: pointer;
 	z-index: 2;
 }
 
 .hidden-header__nav-list {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
 	position: absolute;
 	top: 0;
 	right: 0;
 	left: 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background-color: #f6f6f6;
-	z-index: 1;
-	padding: 83px 148px 102px;
+	padding: 105px 0;
 	transform: translateX(-100%);
 	transition: all 0.3s;
+	z-index: 1;
 }
 
 .hidden-header__nav-item {
@@ -149,22 +169,20 @@ input {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	border: 1px solid #00a0c1;
 	border-radius: 37px;
-
-	color: #00a0c1;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 28px;
 	letter-spacing: 0.2px;
+	background-color: #ffa62b;
+	color: #fff;
 	transition: all 0.2s;
 }
 
 .site-header__hero-btn:hover {
-	background-color: #ffa62b;
-	color: #fff;
-	border: none;
+	border: 1px solid #00a0c1;
+	background-color: transparent;
+	color: #00a0c1;
 }
 /* ---------- HEADER HERO END ---------- */
 
@@ -433,5 +451,75 @@ input {
 	color: #737373;
 }
 /* ---------- ABOUT END ---------- */
+
+/* ---------- CLIENTS START ---------- */
+.clients {
+	padding: 58px 0 20px;
+	background-color: #fafafa;
+}
+
+.clients::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 77px;
+	background-color: #252B42;
+}
+
+.clients__list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 86px;
+}
+
+.clients__form {
+	display: flex;
+	align-items: center;
+	gap: 180px;
+	padding: 30px 50px;
+	background-color: #16697A;
+	margin: 70px auto 20px;
+	border-radius: 2px;
+	max-width: 986px;
+	width: 100%;
+}
+
+.clients__form-title {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 133%;
+	color: #fff;
+}
+
+.clients__form-input {
+	display: flex;
+	align-items: center;
+}
+
+.clients__form-input-email {
+	padding: 15px 20px;
+	border-radius: 5px 0 0 5px;
+	width: 333px;
+
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 200%;
+	letter-spacing: 0.01em;
+	color: #737373;
+}
+
+.clients__form-input-btn {
+	padding: 15px 20px;
+	background-color: #FFA62B;
+	border-radius: 0 5px 5px 0;
+	color: #fff;
+
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 200%;
+	letter-spacing: 0.01em;
+}
+/* ---------- CLIENTS END ---------- */
 
 /* ---------- MAIN END ---------- */

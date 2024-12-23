@@ -1,4 +1,4 @@
-const btnMenu = document.querySelector('.site-header__nav-menu')
+const btnMenu = document.querySelector('.site-header__menu-btn')
 const hiddenMenu = document.querySelector('.hidden-header__nav-list')
 
 btnMenu.addEventListener('click', () => {
