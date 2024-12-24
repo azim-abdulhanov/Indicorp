@@ -2,6 +2,7 @@
 	.site-header__cards {
 		display: flex;
 		flex-direction: column;
+		transform: translateY(0);
 	}
 	.site-header__card {
 		display: flex;
@@ -27,6 +28,12 @@
 		flex-wrap: wrap;
 		gap: 50px;
 	}
+	.contacts__list {
+		flex-direction: column;
+	}
+	.contacts__item {
+		width: 50%;
+	}
 }
 
 @media (max-width: 950px) {
@@ -40,7 +47,8 @@
 }
 
 @media (max-width: 650px) {
-	.site-header__menu-btn {
+	.site-header__menu-cart,
+	.site-header__menu-search {
 		display: none;
 	}
 	.site-header__hero {
@@ -74,6 +82,9 @@
 	}
 	.clients__form-input-email {
 		width: 100%;
+	}
+	.contacts__item {
+		width: 80%;
 	}
 }
 
@@ -119,6 +130,23 @@
 	}
 	.clients__item-img {
 		width: 65px;
+	}
+	.contacts__item {
+		width: 100%;
+		padding: 30px;
+	}
+	.contacts__item:hover {
+		padding: 50px 30px;
+	}
+	.contacts__info-title {
+		font-size: 25px;
+	}
+	.contacts__item-img {
+		height: 55px;
+		height: 55px;
+	}
+	.contacts__item-link {
+		padding: 8px 10px;
 	}
 }
 
