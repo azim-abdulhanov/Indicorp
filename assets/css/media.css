@@ -13,8 +13,7 @@
 		justify-content: center;
 	}
 	.services__list {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		gap: 35px;
 	}
 	.about__video-wrapper {
 		flex-direction: column;
@@ -31,9 +30,6 @@
 	.contacts__list {
 		flex-direction: column;
 	}
-	.contacts__item {
-		width: 50%;
-	}
 }
 
 @media (max-width: 950px) {
@@ -44,12 +40,24 @@
 		flex-direction: column;
 		gap: 100px;
 	}
+	.footer__contacts {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 50px;
+	}
+	.footer__nav {
+		flex-wrap: wrap;
+	}
 }
 
 @media (max-width: 650px) {
-	.site-header__menu-cart,
-	.site-header__menu-search {
+	.site-header__nav-list {
 		display: none;
+	}
+	.site-header__menu-search,
+	.site-header__menu-cart,
+	.site-header__menu-btn {
+		display: block;
 	}
 	.site-header__hero {
 		max-width: 400px;
@@ -66,8 +74,7 @@
 		font-size: 35px;
 	}
 	.services__list {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
+		gap: 30px;
 	}
 	.about__video-info-title {
 		font-size: 30px;
@@ -83,27 +90,23 @@
 	.clients__form-input-email {
 		width: 100%;
 	}
-	.contacts__item {
-		width: 80%;
+	.footer__nav {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.footer__end-wrapper {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 50px;
 	}
 }
 
 @media (max-width: 480px) {
-	.site-header__nav-list {
-		display: none;
-	}
 	.site-header__nav {
 		gap: 30px;
 	}
 	.site-header__menu {
 		gap: 20px;
-	}
-	.site-header__menu-btn {
-		display: block;
-	}
-	.site-header__menu-search,
-	.site-header__menu-cart {
-		display: block;
 	}
 	.features__info-title {
 		font-size: 30px;
@@ -118,6 +121,9 @@
 	.about__item {
 		gap: 10px;
 	}
+	.clients__list {
+		flex-direction: column;
+	}
 	.clients__form {
 		padding: 15px 20px;
 	}
@@ -128,11 +134,7 @@
 	.clients__form-title {
 		font-size: 18px;
 	}
-	.clients__item-img {
-		width: 65px;
-	}
 	.contacts__item {
-		width: 100%;
 		padding: 30px;
 	}
 	.contacts__item:hover {
@@ -147,6 +149,9 @@
 	}
 	.contacts__item-link {
 		padding: 8px 10px;
+	}
+	.footer__contacts-link {
+		padding: 10px 30px;
 	}
 }
 
